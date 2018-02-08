@@ -36,11 +36,11 @@ public class DataStar implements Comparable<DataStar> {
 		GradeasID id=new GradeasID(value,sg,0);
 		this.head = id;
 	}
-	
+
 
 	public DataStar(){
 		arcs= new TreeMap<Integer, TreeSet<GradeasID>> ();
-	
+
 	}
 
 	@Override
@@ -48,8 +48,8 @@ public class DataStar implements Comparable<DataStar> {
 		if(this.head==o.head){
 			return 0;
 		}
-			return head.compareTo(o.head);
-	
+		return head.compareTo(o.head);
+
 	}
 
 	@Override
@@ -108,5 +108,5 @@ public class DataStar implements Comparable<DataStar> {
 			arcs.put(p,neighbors);
 		}
 	}
-	
+
 }
